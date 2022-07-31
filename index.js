@@ -1,36 +1,36 @@
 var readlineSync = require("readline-sync");
 var userName = readlineSync.question("What is your name? ");
-console.log("Welcome to the quiz, "+ userName);
+console.log("Welcome to the quiz, " + userName);
 
 console.log("\n");
 
 var score = 0;
 
-function quiz(question, answer){
+function quiz(question, answer) {
   var userAnswer = readlineSync.question(question);
-  if(userAnswer == answer){
+  if (userAnswer.toUpperCase() == answer.toUpperCase()) {
     console.log("Correct answer!")
-      score++;
+    score++;
   } else {
     console.log("Wrong answer!")
     score--;
   }
-  console.log("Your score is: "+ score);
+  console.log("Your score is: " + score);
   console.log("-----------------------------------");
 }
 
 
 var questions = [
   {
-  question: "Whos is the current elected president of India? ",
-  answer: "Droupadi Murmu"
+    question: "Whos is the current elected president of India? ",
+    answer: "Droupadi Murmu"
   },
   {
-  question: "Who is the finance minister of India? ",
-  answer: "Nirmala"
+    question: "Who is the finance minister of India? ",
+    answer: "Nirmala"
   },
   {
-  question: "Who is the founder of Boring company? ",
+    question: "Who is the founder of Boring company? ",
     answer: "Elon Musk"
   },
   {
@@ -43,11 +43,11 @@ var questions = [
   },
   {
     question: "How many consonants are there in the English alphabet? ",
-  answer: "21"
+    answer: "21"
   },
   {
     question: "Name the National river of India? ",
-      answer: "Ganga"
+    answer: "Ganga"
   },
   {
     question: "Which colour symbolises peace? ",
@@ -64,10 +64,10 @@ var questions = [
 ];
 
 
-for(var i=0; i<questions.length; i++){
+for (var i = 0; i < questions.length; i++) {
   var currentQues = questions[i];
   quiz(currentQues.question, currentQues.answer);
 };
 
 
-console.log("Your final score is: "+ score +"/10");
+console.log("Your final score is: " + score + "/10");
