@@ -71,5 +71,5 @@ for (var i = 0; i < questions.length; i++) {
   quiz(currentQues.question, currentQues.answer);
 };
 
-
+console.log("\n");
 console.log("Your final score is: " + score + "/10");
