@@ -1,6 +1,8 @@
+
 var readlineSync = require("readline-sync");
+
 var userName = readlineSync.question("What is your name? ");
-console.log("Welcome to the quiz, " + userName);
+console.log("Welcome " + userName + ", Let's see how well you know me.");
 
 console.log("\n");
 
@@ -22,44 +24,44 @@ function quiz(question, answer) {
 
 var questions = [
   {
-    question: "Whos is the current elected president of India? ",
-    answer: "Droupadi Murmu"
+    question: "What is my real name? ",
+    answer: "Md Akil Ahmed"
   },
   {
-    question: "Who is the finance minister of India? ",
-    answer: "Nirmala"
+    question: "Which is my birthday? ",
+    answer: "10/01"
   },
   {
-    question: "Who is the founder of Boring company? ",
-    answer: "Elon Musk"
+    question: "Which is my native state? ",
+    answer: "Imphal"
   },
   {
-    question: "Which state is the largest sugarcane producing state in India? ",
-    answer: "Uttar Pradesh"
+    question: "Where do I live now? ",
+    answer: "Bangalore"
   },
   {
-    question: "Which animal is known as the 'Ship of the Desert? ",
-    answer: "Camel"
+    question: "Which is favorite superhero? ",
+    answer: "Iron Man"
   },
   {
-    question: "How many consonants are there in the English alphabet? ",
-    answer: "21"
+    question: "Which is my favorite movie? ",
+    answer: "3 idiots"
   },
   {
-    question: "Name the National river of India? ",
-    answer: "Ganga"
+    question: "Who is my bestfriend? ",
+    answer: "Me"
   },
   {
-    question: "Which colour symbolises peace? ",
-    answer: "White"
+    question: "Which is my travel destination? ",
+    answer: "Bali"
   },
   {
-    question: "How many sides are there in a triangle? ",
-    answer: "Three"
+    question: "Where do I want to settle? ",
+    answer: "Indonesia"
   },
   {
-    question: "Name the largest planet of our Solar System? ",
-    answer: "Jupiter"
+    question: "Which is my fav dish? ",
+    answer: "Chicken"
   }
 ];
 
