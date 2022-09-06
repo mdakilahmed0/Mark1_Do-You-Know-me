@@ -1,4 +1,7 @@
-This is mark1 assignment of levelZero NeogCamp. <br>
-
-Here I have created a simple quiz app with all the knowledge what I have learned from lesson1 given by Tanay Pratap as as part of the levelZero.
-
+# Mark 1: Do you know me?
+    
+    *   It's an simple nodeJS app to check how much my friends know me.
+    *   It includes multiple questions about me and you need to answer it
+    *   It'll generate an score on how much you score correctly at th end
+## Tech Stack Used:
+    Node.js
